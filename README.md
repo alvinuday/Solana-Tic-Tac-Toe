@@ -50,8 +50,6 @@ To stop the local solana cluster run:
 $ npm run localnet:down
 ```
 
-For more details on working with a local cluster, see the [full instructions](https://github.com/solana-labs/solana-web3.js#local-network).
-
 ### Build the BPF program
 ```sh
 $ npm run build:bpf-rust
@@ -61,7 +59,7 @@ or
 $ npm run build:bpf-c
 ```
 
-The compiler places output files in `dist/program`. Program build scripts contain the compiler settings and can be found in the [Solana SDK](https://github.com/solana-labs/solana/tree/master/sdk/bpf/rust)
+The compiler places output files in `dist/program`. Program build scripts contain the compiler settings and can be found in the Solana SDK
 
 ### Run the Command-Line Front End
 After building the program,
@@ -76,7 +74,7 @@ to track the open and completed games (`findDashboard`), and starts a new game (
 
 To play the game, open a second terminal and again run the `npm run start` script.
 
-To see the program or game state on the blockchain, send a `getAccountInfo` [JSON-RPC request](https://solana-labs.github.io/solana/jsonrpc-api.html#getaccountinfo) to the cluster, using the id printed by the script, eg.:
+To see the program or game state on the blockchain, send a `getAccountInfo` JSON-RPC request to the cluster, using the id printed by the script, eg.:
 * `Dashboard programId: HFA4x4oZKWeGcRVbUYaCHM59i5AFfP3nCfc4NkrBvVtP`
 * `Dashboard: HmAEDrGpsRK2PkR51E9mQrKQG7Qa3iyv4SvZND9uEkdR`
 * `Advertising our game (Gx1kjBieYgaPgDhaovzvvZapUTg5Mz6nhXTLWSQJpNMv)`
